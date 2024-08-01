@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.marksheet {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #000;
+    background-size: contain;
+    background-color: whitesmoke;
+}
+
+.header {
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.qr-code {
+    float: right;
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+    text-align: center;
+    line-height: 100px;
+}
+
+.student-details, .course-details {
+    margin-bottom: 20px;
+}
+
+.content{
+    text-align: center;
+}
+input{
+    margin-top: 5px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 3px solid #000;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+input{
+    padding: 5px;
+    text-align: center;
+    border: none;
+}
+.foot{
+    display: block;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 80px; */
+}
+.footer h3{
+    float: right;
+}
+h4{
+    text-align: center;
+}
+h5{
+    /* float: right; */
+    text-align: right;
+    margin-top: 80px;
+    margin-bottom: 0px;
+}

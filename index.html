@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Mark Sheet</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="marksheet">
+        <div class="header">
+            <h3>Sr. No. <span style="color: red;">00000000</span></h3>
+            <img src="./assets/logo.png" alt="College Logo" class="logo">
+            <div class="qr-code">QR Code</div>
+        </div>
+        <div class="content">
+            <h1 id="title">Hindusthan College of Engineering and Technology</h1>
+            <p>Accredited with NAAC A++ Grade </p>
+            <p>An Autonomous Institution Recognized by Government of India</p>
+            <h1>Annual Statement of Marks</h1>
+        </div>
+        <div class="student-details">
+            <table>
+                    <tr>
+                        <th colspan="2"><label>Name of the Candidate <br><input type="text" id="studentName" placeholder="(Candidate's Name)"></label></th>
+                        <th><label>Course name with code <br>B.Tech Information Technology<br>21IT6000</label></th>
+                    </tr>
+                    <tr>
+                        <th><label>Reg. No. <br><input type="text" id="regNo" placeholder="(Registration Number)"></label></th>
+                        <th><label>Enrollment No. <br><input type="text" id="enrollNo" placeholder="(Enrollment Number)"></label></th>
+                        <th colspan="1">Authorized Training Center Name with Code <br>Hindusthan College of Engineering and Technology <br>2708</th>
+                    </tr>
+            </table>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Subject Code</th>
+                    <th rowspan="2">Subject Name</th>
+                    <th rowspan="2">Max Marks</th>
+                    <th rowspan="1" colspan="3">Marks Obtained</th>
+                    <th rowspan="2">Total in Words</th>
+                </tr>
+                <tr>
+                    <th>Theory Marks</th>
+                    <th>Practical Marks</th>
+                    <th>Total Marks</th>
+                </tr>
+            </thead>
+            <tbody id="marksTable">
+                <tr>
+                    <td>21IT6201</td>
+                    <td>Project Management</td>
+                    <td>100</td>
+                    <td><input type="text" id="theoryMarks1"></td>
+                    <td>XX</td>
+                    <td><span id="totalMarks1"></span></td>
+                    <td>Ninety Five</td>
+                </tr>
+                <tr>
+                    <td>21IT6202</td>
+                    <td>Embedded Systems</td>
+                    <td>100</td>
+                    <td><input type="text" id="theoryMarks2"></td>
+                    <td>XX</td>
+                    <td><span id="totalMarks2"></span></td>
+                    <td>Ninety Two</td>
+                </tr>
+                <tr>
+                    <td>21IT6203</td>
+                    <td>Data Warehouse</td>
+                    <td>100</td>
+                    <td><input type="text" id="theoryMarks3"></td>
+                    <td>XX</td>
+                    <td><span id="totalMarks3"></span></td>
+                    <td>Ninety seven</td>
+                </tr>
+                <tr>
+                    <td>21IT6204</td>
+                    <td>Data Science</td>
+                    <td>100</td>
+                    <td><input type="text" id="theoryMarks4"></td>
+                    <td>XX</td>
+                    <td><span id="totalMarks4"></span></td>
+                    <td>Ninety one</td>
+                </tr>
+                <tr>
+                    <td>21IT6205</td>
+                    <td>Predictive Modeling</td>
+                    <td>100</td>
+                    <td><input type="text" id="theoryMarks5"></td>
+                    <td>XX</td>
+                    <td><span id="totalMarks5"></span></td>
+                    <td>Eighty Nine</td>
+                </tr>
+                <tr>
+                    <td>21IT6001</td>
+                    <td>Embedded Systems Lab</td>
+                    <td>100</td>
+                    <td>XX</td>
+                    <td><input type="text" id="practicalMarks1"></td>
+                    <td><span id="totalMarks6"></span></td>
+                    <td>Ninety Nine</td>
+                </tr>
+                <tr>
+                    <td>21IT6002</td>
+                    <td>Data Science Lab</td>
+                    <td>100</td>
+                    <td>XX</td>
+                    <td><input type="text" id="practicalMarks2"></td>
+                    <td><span id="totalMarks7"></span></td>
+                    <td>Ninety Six</td>
+                </tr>
+                <tr>
+                    <td>21IT6003</td>
+                    <td>Predictive Modeling Lab</td>
+                    <td>100</td>
+                    <td>XX</td>
+                    <td><input type="text" id="practicalMarks3"></td>
+                    <td><span id="totalMarks8"></span></td>
+                    <td>Ninety Four</td>
+                </tr>
+            </tbody>
+            <tr>
+                <th colspan="2">Grand Total <br>In Words</th>
+                <td colspan="5"><span id="totalMarks">0</span><br><span>Seven Hundred and Eight</span></td>
+            </tr>
+            <tr>
+            <th colspan="2">Month and Year of Examination</th>
+            <th colspan="2">No.of Subject Offered</th>
+            <th>Result</th>
+            <th>Percentage </th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td colspan="2">May 2020</td>
+            <td colspan="2">T5+P3=8</td>    
+            <td><span id="result">Pass/Fail</span></td>
+            <td><span id="percentage">0%</span></td>
+            <td><span id="grade">Grade</span></td>
+        </tr>
+        </table>
+        <h5>(Signature of Deputy <br>Controller of Examination)</h5>
+        <div class="footer">
+            <h3>Date : <span><b>(Date of Result)</b></span></h3>
+            <h3>Deputy Controller of Examination</h3>
+        </div>
+        <h4>Subject marked with &#10033; indicates Exemption</h4>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
